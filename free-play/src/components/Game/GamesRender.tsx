@@ -17,9 +17,7 @@ export const GameRender = ({ value, platform, genre }: TypeGamesFilter) => {
     });
     renderGame();
   }, [platform, genre, stateResult]);
-  console.log(stateResult)
-  console.log(genre)
-  console.log(platform)
+
   useEffect(() => {
     if (value.length < 1 && stateResult.length < 1) {
       setData(state);
